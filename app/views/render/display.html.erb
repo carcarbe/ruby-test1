@@ -1,0 +1,46 @@
+
+
+<div id="mainNav">
+ <span id="Date"><%= DateTime.now.strftime('%A %d %B %Y') %></span>	
+ <ul>
+<% @sections.reverse.each do |section| %>
+ 
+   <li> <%= link_to section.name, render_path(section.name)%></li>
+	     
+<% end %>
+</ul>
+</div>
+	
+<div id="webContent">
+	
+<h1 ><%= @current_section.name%> </h1>
+<% unless @current_projects.nil?  %>
+	<%  @current_projects.each do |project|%>
+	
+	<h2><%= project.name%></h2>
+		
+	<% current_contents=Content.find_all_by_project_id(project.id) 
+	 unless current_contents.nil? 
+	 current_contents.each do |content|
+	 %>
+	
+	  
+	<%  if content.kind=='text' %>
+	 
+	<p><%= content.info.html_safe %> </p>
+	<% else %>
+	 	<%= image_tag(content.photo_path,:class=>'photo') %>
+	<% end%>
+		 
+		 
+		 
+		 
+	<%end%>
+	
+		
+	<%end %>
+ <%end %>
+<% end%>
+	</div>
+<div id="pruebaloca">
+</div>

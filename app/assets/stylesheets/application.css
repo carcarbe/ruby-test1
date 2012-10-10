@@ -1,0 +1,162 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+#personalWebsite {
+
+	 
+}
+
+#mainNav {
+	
+margin-top: -20;
+background-image: url(../images/metal-texture.jpg);
+overflow: hidden;
+
+}
+
+#mainNav ul {
+	
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+
+	padding-top: 6px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	}
+#mainNav li {
+	display: inline;
+	float: right;
+}
+
+#mainNav a {
+ 
+	display: block;
+	border: 1px solid #000;
+border-bottom: none;
+padding: 5px 15px 5px 15px;
+margin-right: 5px;
+background-color: #EAEAEA;
+text-decoration: none;
+color: #333;
+	}
+#mainNav a:link {  }
+#mainNav a:visited {  }
+#mainNav a:hover {  color:#FF0000; }
+#mainNav a:active { color:#333333;}
+
+#mainNav a:hover { background-color:#666666; }
+
+#mainNav span {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#legal {
+	clear: both;
+	
+	padding: 5px 5px 20px 160px;
+	border-top: 1px dashed #999999;
+	font-weight: bold;
+	color: #666666;
+	
+}
+
+#webContent {
+margin-left: 100px;
+margin-right: 100px;
+font-family: Comic Sans, Comic Sans MS, cursive;
+font-weight: 400;
+padding: 40px;
+border : 1px solid #999999;
+border-radius: 15px;
+}
+
+#webContent h1 {
+
+	 
+ 
+	border-bottom: 2px solid #B2F511;
+	
+	   font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 40px;
+    font-variant: small-caps;
+    font-weight: bold;
+     
+	border-bottom: 1px solid #002D4B;
+	margin-top: 25px;
+	
+	 
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	background: url(images/feature_bug.png) no-repeat top right;
+
+}
+
+#about_me_info {
+
+width: 560px;
+ 
+
+}
+
+.tableSkills th{
+   text-align: left;
+   
+}
+
+.tableSkills td {
+
+padding-bottom: 23px;
+
+
+vertical-align:text-top;
+}
+
+#email a{
+	color: #6378df
+}
+
+.photo {
+	border: 1px solid #666;
+	background-color: #FFF;
+	padding: 4px; 
+position: relative; 
+  top: -5px; 
+  left:-5px;
+
+}
+
+#Date {
+	 font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 0;
+	padding: 10px 10px 16px 10px;
+	font-size: 21px;
+	line-height: 24px;
+	letter-spacing: -2px;
+	font-weight: bold;
+	
+}
+
+.project {
+
+font-weight:bold;
+ 
+}
+
+iframe {
+	 display: block;
+}
+
+ 

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @content.name %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @content.order %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @content.section_id %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @content.project_id %>
+</p>
+
+<p>
+  <b>Info:</b>
+  <%= @content.info %>
+</p>
+
+<p>
+  <b>Kind:</b>
+  <%= @content.kind %>
+</p>
+
+
+<%= link_to 'Edit', edit_content_path(@content) %> |
+<%= link_to 'Back', contents_path %>
